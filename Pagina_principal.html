@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .image-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .image-background img {
+            position: static;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            animation: fade 20s infinite;
+        }
+        .image-background img:nth-child(1) { animation-delay: 0s; }
+        .image-background img:nth-child(2) { animation-delay: 5s; }
+        .image-background img:nth-child(3) { animation-delay: 10s; }
+        .image-background img:nth-child(4) { animation-delay: 15s; }
+
+        @keyframes fade {
+            0%, 20% { opacity: 1; }
+            25%, 45% { opacity: 0; }
+            50%, 70% { opacity: 1; }
+            75%, 95% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px; 
+            width: 100px;
+            z-index: 1;
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            margin: 0;
+            z-index: 1;
+        }
+        .neon-text {
+            color: black;
+            font-size: 24px;
+            text-align: center;
+            text-shadow: 
+                0 0 5px white, 
+                0 0 10px white, 
+                0 0 15px white, 
+                0 0 20px white, 
+                0 0 25px white; 
+            margin: 10px 0;
+            z-index: 1;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            z-index: 1;
+        }
+        .project {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 250px; 
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .project:hover {
+            transform: scale(1.05);
+        }
+        a {
+            outline: none;
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .description {
+            color: #777;
+            margin: 10px 0;
+        }
+        .project img {
+            max-width: 100%;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            position: fixed; /* Cambiado a fixed */
+            bottom: 0;
+            width: 100%;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-background">
+        <img src="https://devlyn.vtexassets.com/assets/vtex.file-manager-graphql/images/e1104491-9de4-4322-b6ea-df763c51f74e___2967e7b9f44cedcac0cbffab359d074e.jpg" alt="Imagen 1">
+        <img src="https://www.informador.mx/__export/1711490680982/sites/elinformador/img/2024/03/26/rs3174487_dig-2023-07-17-20-20-77-lpr_crop1711490680391.jpg_554688468.jpg" alt="Imagen 2">
+        <img src="https://www.renovablesverdes.com/wp-content/uploads/2019/11/Tapones-de-pl%C3%A1stico.jpg" alt="Imagen 3">
+        <img src="https://irp.cdn-website.com/8ef7df2b/MOBILE/jpg/298.jpg" alt="Imagen 4">
+    </div>
+
+    <img src="Logo.png" alt="Logo" class="logo">
+    <h1><br>Bienvenido a los PEC de CECyTEA<br><br></h1>
+
+    <div class="neon-text">
+        <p>
+            Los Proyectos Educativos Comunitarios (PEC) son iniciativas diseñadas para promover el aprendizaje práctico y el compromiso social entre los estudiantes. A través de estos proyectos, buscamos no solo adquirir conocimientos, sino también contribuir de manera significativa al bienestar de nuestra comunidad.
+        </p>
+        <p>
+            Nuestro objetivo es desarrollar proyectos que beneficien a nuestra comunidad, abordando necesidades locales y promoviendo la colaboración entre estudiantes, docentes y ciudadanos. Creemos que al involucrarnos en estos esfuerzos, podemos generar un impacto positivo y duradero, fortaleciendo los lazos sociales y fomentando un entorno más solidario y responsable.
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="project">
+            <a href="Lentes.html">
+                <p>Lentes para todos</p>
+                <div class="description">Proyecto que busca proporcionar lentes a personas necesitadas.</div>
+                <img src="https://cdn.shopify.com/s/files/1/0050/9893/0225/articles/vision-center-por-que-usar-lentes-multifocales.jpg?v=1581095110" alt="Lentes para todos">
+            </a>
+        </div>
+        <div class="project">
+            <a href="file:///C:/Users/Alumno/Downloads/234.html">
+                <p>Zoológico</p>
+                <div class="description">Iniciativa para crear conciencia sobre la conservación animal.</div>
+                <img src="https://cdn.milenio.com/uploads/media/2023/02/04/zoologico-guadalajara-especial-1.jpg" alt="Zoológico">
+            </a>
+        </div>
+        <div class="project">
+            <a href="file:///C:/Users/Alumno/Downloads/345.html">
+                <p>Tapas</p>
+                <div class="description">Proyecto de reciclaje y reutilización de materiales.</div>
+                <img src="https://www.ucr.ac.cr/medios/fotos/2018/15bf5fcf50597d.jpg" alt="Tapas">
+            </a>
+        </div>
+        <div class="project">
+            <a href="file:///C:/Users/Alumno/Downloads/456.html">
+                <p>Asilo</p>
+                <div class="description">Iniciativa para apoyar a las personas mayores en nuestra comunidad.</div>
+                <img src="https://comisariopantera.mx/wp-content/uploads/asilo-ancianos.jpg" alt="Asilo">
+            </a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Integrantes del equipo:</p>
+        <p> | Dafne Camila Dias de Leon Llamas | Azul Alexa Garcia Soto  | Moises Gonzales Reza |  Jesus Benjamin Gutierrez Reyes |</p>
+    </footer>
+    <br><br><br><br><br>
+
+</body>
+</html>

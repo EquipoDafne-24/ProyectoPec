@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos PEC CECyTEA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Color pastel frío */
+            color: #333333;
+        }
+        header {
+            background-color: #dfd89c; /* Color azul pastel */
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem ;
+            font-family:'Times New Roman', Times, serif;
+        }
+        h2 {
+            margin-top: 20px;
+            text-align: center;
+            color: #000000; /* Color gris oscuro */
+        }
+        
+        section {
+            background: #dfd89c;;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 800px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        h3 {
+            color: #633808; 
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+        h4{
+             color: #000000; 
+             font-family: cursive;
+        }
+        p {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            line-height: 1.6;
+        }
+        img, video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
+        .back-button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #3b3b3b; /* Verde azulado pastel */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .back-button:hover {
+            background-color: #0c0c0c; /* Color más oscuro al pasar el mouse */
+        }
+        .image-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .image-background img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: fade 20s infinite;
+}
+
+@keyframes fade {
+    0%, 20% { opacity: 1; }
+    25%, 45% { opacity: 0; }
+    50%, 70% { opacity: 1; }
+    75%, 95% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.image-background img:nth-child(1) { animation-delay: 0s; }
+.image-background img:nth-child(2) { animation-delay: 5s; }
+.image-background img:nth-child(3) { animation-delay: 10s; }
+.image-background img:nth-child(4) { animation-delay: 15s; }
+
+    </style>
+</head>
+<body>
+    <div class="image-background">
+        <img src="foto1.jpeg" alt="Imagen 1">
+        <img src="foto2.jpeg" alt="Imagen 2">
+        <img src="foto3.jpeg" alt="Imagen 3">
+        <img src="foto4.jpeg" alt="Imagen 4">
+        <img src="foto5.jpeg" alt="Imagen 5">
+    </div>
+    <header>
+        <h1>LENTES PARA TODOS</h1>
+        
+       <big> <h3>OBJETIVO:</h3></big>
+       <big><h4>Dotar a los estudiantes con lentes, con el fin de mejorar su rendimiento académico.</h4></big> 
+    </div>
+    </header>
+    <h2>Proceso que se llevó a cabo:</h2>
+    <section>
+        <h4>Formulario</h4>
+        <p>Conocer mas sobre si necesitas lentes.</p>
+        <img src="formulario.jpeg" width="150" height="150" alt="Formulario">
+    </section>
+    <section>
+        <h4>Contacto con DIF</h4>
+        <p>Contactar al DIF para que los lentes sean gratuitos a quien los necesite.</p>
+    </section>
+    <section>
+        <h4>Examen-Resultados</h4>
+        <p>Obtener los resultados para la elaboracion de lentes.</p>
+       <center> <img src="foto2.jpeg" width="200" height="200"></img></center>
+
+    </section>
+    <section>
+        <h4>Estudio Socioeconómico</h4>
+        <p>Por medio de una encuesta telefonica se les harasaber si son candidatos a recibir ayuda al 100% o al 50% monetariamente.</p>
+     
+    </section>
+    <section>
+        <h4>Mandar a hacer los lentes</h4>
+        <p>Información sobre el proceso de fabricación de los lentes.</p>
+        <img src="path/to/image3.jpg" alt="Lentes">
+    </section>
+    <section>
+        <h4>Ceremonia de entrega</h4>
+        <p>Información sobre la ceremonia de entrega de lentes.</p>
+        <video src="path/to/video2.mp4" controls></video>
+    </section>
+    <a href="Pagina_principal.html" class="back-button">Regresar</a> 
+</body>
+</html>
+
